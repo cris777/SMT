@@ -906,12 +906,12 @@ navigationLink.click(function(e){
 
 
     $(search_form).submit(function( event ) {
-      if ( 'patos' === $( "input" ).val() || 'orebit' === $( "input" ).val() || 'santeno7' === $( "input" ).val() || 'tescalade' === $( "input" ).val() || 'migrapanama' === $( "input" ).val() || 'balboa' === $( "input" ).val() || 'fint' === $( "input" ).val() || 'ai' === $( "input" ).val() ||  'quiz' === $( "input" ).val() || 'carnets' === $( "input" ).val() || 'pdf' === $( "input" ).val() || 'mainframe'  === $( "input" ).val()) {
+      if ( 'patos' === $( "input" ).val() || 'orebit' === $( "input" ).val() || 'santeno7' === $( "input" ).val() || 'tescalade' === $( "input" ).val() || 'migrapanama' === $( "input" ).val() || 'balboa' === $( "input" ).val() || 'fint' === $( "input" ).val() || 'ai' === $( "input" ).val() ||  'quiz' === $( "input" ).val() || 'mainframe'  === $( "input" ).val()) {
 
     createHome();
 
       } else if ( $( "input" ).val() === "exit" ) {
-                window.open('https://sierramindtech.com');
+                window.open('https://sierramindtech.com','_self');
         } else if ($( "input" ).val() === "ipconfig") {
 
         var binder = $('input').val();
@@ -951,11 +951,11 @@ navigationLink.click(function(e){
 <script>
 // Countdown timer for redirecting to another URL after several seconds
 
-var seconds = 10; // seconds for HTML
+var seconds = 7; // seconds for HTML
 var foo; // variable for clearInterval() function
 
 function redirect() {
-    document.location.href = '../carnets/';
+    document.location.href = 'https://www.sierramindtech.com';
 }
 
 function updateSecs() {
@@ -970,7 +970,7 @@ function updateSecs() {
 function countdownTimer() {
     foo = setInterval(function () {
         updateSecs()
-    }, 10000);
+    }, 7000);
 }
 
 countdownTimer();
