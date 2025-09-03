@@ -1,0 +1,82 @@
+<!-- Desarrollado por SMT - www.sierramindtech.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App para pruebas | SMT</title>
+  <!-- Hoja de CSS para estilos del app -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <!-- Botón de empezar -->
+  <div class="start_btn"><button>Empezar Prueba</button></div>
+
+  <!-- Info Box (aparece cuando empieza la prueba) -->
+  <div class="info_box">
+    <div class="info-title"><span>Algunas reglas de esta prueba</span></div>
+    <div class="info-list">
+      <div class="info">1. Tendrás solo <span>15 segundos</span> por cada pregunta.</div>
+      <div class="info">2.  Una vez que selecciones tu respuesta, no podrás cambiarla.</div>
+      <div class="info">3. No puedes seleccionar ninguna respuesta una vez que se acabe el tiempo.</div>
+      <div class="info">4. No puedes salir del cuestionario mientras estás jugando.</div>
+      <div class="info">5. Obtendrás puntos en función de tus respuestas correctas.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Salir</button>
+      <button class="restart">Continuar</button>
+    </div>
+  </div>
+
+  <!-- Prueba Box (main container de la prueba) -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">Applicación de Pruebas</div>
+      <div class="timer">
+        <div class="time_left_txt">Tiempo</div>
+        <div class="timer_sec">15</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Las preguntas se insertan aqui desde el JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Las opciones se insertan aqui desde el JavaScript -->
+      </div>
+    </section>
+
+    <!-- Footer del Prueba Box -->
+    <footer>
+      <div class="total_que">
+        <!-- El conteo de preguntas se inserta aqui desde el JavaScript -->
+      </div>
+      <button class="next_btn">Siguiente</button>
+    </footer>
+  </div>
+
+  <!-- Resultados Box (aparecen cuando concluye la prueba) -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">Haz terminado la prueba!</div>
+    <div class="score_text">
+      <!-- El resultado final se inserta aqui desde el JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Reintentar</button>
+      <button class="quit">Salir</button>
+    </div>
+  </div>
+
+  <!-- JavaScript para editar las preguntas y opciones -->
+  <script src="js/questions.js"></script>
+
+  <!-- JavaScript que contiene la lógica de la prueba -->
+  <script src="js/script.js"></script>
+</body>
+</html>
