@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A chatbot for blockchain and cryptocurrency questions, accessible and responsive.">
+  <title>FINT A.I. - Decentralized Crypto Advisor</title>
+  <link rel="stylesheet" href="aidan.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <header>
+    <h1>FINT A.I. - Decentralized Crypto Advisor</h1>
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </header>
+  <main>
+    <section id="message-section" role="log" aria-live="polite">
+      <div class="welcome-message">
+        <p>Welcome! Ask me about blockchain, crypto investments, or NFTs! 🚀</p>
+      </div>
+    </section>
+    <div class="input-container">
+      <label for="user-input" class="sr-only">Ask a question about crypto</label>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Ask about crypto..."
+        aria-describedby="input-hint"
+        autocomplete="off"
+      >
+      <button class="send-button" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+    <div class="quick-messages" role="navigation">
+      <button class="quickmessage" data-message="What is blockchain?">What is Blockchain?</button>
+      <button class="quickmessage" data-message="How to invest in crypto?">How to Invest?</button>
+      <button class="quickmessage" data-message="Is crypto safe?">Is Crypto Safe?</button>
+    </div>
+  </main>
+  <footer>
+    <p>Powered by <a href="https://finthub.org" target="_blank" rel="noopener">Finthub</a></p>
+  </footer>
+  <script src="script1.js"></script>
+</body>
+</html>
